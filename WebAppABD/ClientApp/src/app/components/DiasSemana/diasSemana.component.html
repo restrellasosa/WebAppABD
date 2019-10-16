@@ -1,0 +1,18 @@
+<ul>
+  <li>Lunes</li>
+  <li>Martes</li>
+  <li>Miercoles</li>
+  <li>Jueves</li>
+  <li>Sabado</li>
+  <li>Domingo</li>
+</ul>
+<h1>Mi nombre es{{nombre}}</h1>
+
+<ul>
+  <li *ngFor="let curso of cursos">{{curso}} </li>
+</ul>
+
+<h1>Mi nombre es {{persona.nombre}} y mi apellidos es {{persona.apellido}}</h1>
+<a href="enlace">content vacio</a>
+<br />
+<a [href]="enlace">content correcto</a>

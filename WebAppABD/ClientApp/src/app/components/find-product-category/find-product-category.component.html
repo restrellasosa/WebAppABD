@@ -1,0 +1,10 @@
+<label>Nombre Categoria</label>
+<select #categoria>
+  <option value="" style="margin: 30px">--Seleccione--</option>
+  <option [value]="categoria.iidCategoria" *ngFor="let categoria of categorias">
+    {{categoria.nombre}}
+  </option>
+</select>
+
+<input type="button" (click)="buscar(categoria)" style="margin: 10px" value="Buscar" class="btn btn-primary"/>
+<input type="button" (click)="limpiar(categoria)" style="margin: 10px" value="Limpiar" class="btn btn-danger"/>
